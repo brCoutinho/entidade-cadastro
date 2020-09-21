@@ -1,0 +1,12 @@
+create table endereco(
+	id serial primary key,
+	fkEntidade integer not null,
+	logradouro varchar(30) not null,
+	tipoLogradouro varchar(10) not null,
+	numero integer not null,
+	bairro varchar(15) not null,
+	cep varchar(8) not null,
+	municipio varchar(30) not null,
+	uf varchar(2) not null,
+	foreign key (fkEntidade) references entidade (id_entidade)
+)

@@ -1,0 +1,8 @@
+create table telefone
+(
+    id integer not null,
+    fkentidade integer not null,
+    ddd varchar(2) not null,
+    numero varchar(9) not null,
+    foreign key(fkEntidade) references entidade(id_entidade)
+)

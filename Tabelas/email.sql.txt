@@ -1,0 +1,6 @@
+create table email(
+	id serial primary key,
+	fkEntidade integer not null,
+	endereco varchar(20) not null,
+	foreign key (fkEntidade) references entidade(id_entidade)
+)
